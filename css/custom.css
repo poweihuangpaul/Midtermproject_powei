@@ -1,0 +1,299 @@
+/* 全域樣式 */
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family:'源流明體 EL', '源流明體 H', '源流明體 L', '源流明體 M', '源流明體 R', '源流明體 SB', '源流明體 TTF Bold', '源流明體 TTF ExtraLight', '源流明體 TTF Heavy', '源流明體 TTF Light', '源流明體 TTF Medium', '源流明體 TTF Regular', '源流明體 TTF SemiBold';
+	
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 連結樣式 */
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    -webkit-transition: all .35s;
+
+}
+
+
+
+/* 段落樣式 */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family:'源流明體 TTF Regular';
+}
+
+/* 列表樣式 */
+li {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family:'源流明體 TTF Regular';
+    color: #000;
+}
+
+/* 頁首樣式 */
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #fff;
+    background-image: url('../images/header.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* 頁首內容樣式 */
+header .header-content {
+    position: relative;
+    width: 100%;
+    padding: 100px 15px 70px;
+    text-align: center;
+}
+
+/* 頁首標題樣式 */
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    font-family: '源流明體 TTF SemiBold';
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 400;
+    text-shadow: 0.03em 0.03em #333;
+}
+
+/* 頁首段落樣式 */
+header .header-content .header-content-inner p {
+    margin-bottom: 50px;
+    font-family: '源流明體 TTF Regular';
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: 0.03em 0.03em #333;
+}
+
+/* RWD頁首樣式 */
+@media(min-width: 768px) {
+    header {
+        min-height: 100%;
+    }
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        padding: 0 50px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    header .header-content .header-content-inner h1 {
+        margin-bottom: 48px;
+        font-size: 60px;
+		 text-shadow: 0.03em 0.03em #333;
+    }
+    header .header-content .header-content-inner p {
+        font-size: 36px;
+		 text-shadow: 0.03em 0.03em #333;
+    }
+}
+
+/* 段落標題樣式 */
+.section-heading {
+    font-family: '源流明體 TTF SemiBold';
+    font-size: 36px;
+}
+
+/* 輕文字樣式 */
+.text-light {
+    font-family:'源流明體 TTF Regular';
+}
+
+/* 介紹區域樣式 */
+.intro {
+    color: white;
+    background-color:#191F25;
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* 內容樣式 */
+.content {
+    padding: 100px 0;
+    font-family: '源流明體 TTF Regular';
+	background-color: #FFFCF4;
+}
+
+/* 內容樣式 - 深色背景 */
+.content2 {
+    padding: 100px 0;
+    font-family:'源流明體 TTF Regular';
+    color: black;
+    background-color: #FFFCF4;
+}
+
+/* 贊助內容樣式 */
+.content4 {
+    padding: 100px 0;
+    font-family:'源流明體 TTF Regular';
+    background-color: #191F25;
+    color: rgba(255, 255, 255, .9);
+}
+
+/* 興趣區域樣式 */
+.promo {
+    color: white;
+    text-shadow: 0px 0px 40px black;
+    text-decoration: none;
+}
+
+.promo-item {
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.promo-item:hover {
+    background-size: 110%;
+    border: 10px solid rgba(255, 255, 255, 0.3);
+    line-height: 160px;
+}
+
+.promo-item h3 {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: '源流明體 TTF SemiBold';
+	 text-shadow: 0.04em 0.05em #333;
+}
+
+/* 興趣項目背景圖片 */
+.item-1 {
+    background: url('../images/a.JPG');
+}
+
+.item-2 {
+    background: url('../images/b.JPG');
+}
+
+.item-3 {
+    background: url('../images/c.JPG');
+}
+
+/* 頁腳樣式 */
+.page-footer {
+    text-align: center;
+}
+
+.page-footer .contact {
+    padding: 100px 0;
+    background-color: #0F0F0F;
+    color: #fff;
+}
+
+.page-footer .contact p {
+    font-size: 22px;
+	font-weight: 300;}
+	
+img.sns {
+    width: 60px;  /* 設定圖片的寬度，例如 100px */
+    height: auto;  /* 保持圖片比例自動調整高度 */
+}
+
+
+.page-footer .small-print {
+    padding: 50px 0 40px;
+    font-weight: 300;
+}
+
+.text-light {
+    color: rgba(255, 255, 255, .7);
+}
+
+/* 預設的導航列樣式 */
+.navbar-default {
+    border-color: rgba(34, 34, 34, .05);
+    background-color: #0F0F0F;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+
+/* 預設品牌名稱樣式 */
+.navbar-default .navbar-header .navbar-brand,
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+    color: white;
+}
+
+/* 預設活動中的連結樣式 */
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+    color: white;
+    background-color: transparent;
+}
+
+/* 預設活動中連結的懸停樣式 */
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+    background-color: transparent;
+}
+
+/* 當螢幕寬度 >= 768px 時的樣式調整 */
+@media(min-width: 768px) {
+    .navbar-default {
+        border-color: rgba(255, 255, 255, .3);
+        background-color: transparent;
+    }
+
+    /* 導覽列品牌名稱樣式 */
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255, 255, 255, .7);
+        letter-spacing: 0.5em;
+    }
+
+    /* 導覽列品牌名稱的懸停/聚焦樣式 */
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #0F0F0F;
+    }
+
+    /* 導覽列連結樣式 */
+    .navbar-default .nav > li > a,
+    .navbar-default .nav > li > a:focus {
+        color: antiquewhite;
+    }
+
+    /* 導覽列連結的懸停樣式 */
+    .navbar-default .nav > li > a:hover,
+    .navbar-default .nav > li > a:focus:hover {
+        color: #e7e7e7;
+    }
+
+    /* 當滾動時導覽列附加樣式 */
+    .navbar-default.affix {
+        border-color: #FFFFFF;
+        background-color: #0F0F0F;
+        box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 固定時品牌名稱樣式 */
+    .navbar-default.affix .navbar-header .navbar-brand {
+        letter-spacing: 0;
+        color: #e7e7e7;
+    }
+
+    /* 固定時導覽列連結樣式 */
+    .navbar-default.affix .nav > li > a,
+    .navbar-default.affix .nav > li > a:focus {
+        color: #e7e7e7;
+    }
+
+    /* 固定時導覽列連結的懸停樣式 */
+    .navbar-default.affix .nav > li > a:hover,
+    .navbar-default.affix .nav > li > a:focus:hover {
+        color: #e7e7e7;
+    }
+}
+
